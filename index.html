@@ -12,13 +12,15 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Portifólio</a></li>
-            <li><a href="#">Contato</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="texto-header">
           <p>Desenvolvedor Web</p>
@@ -48,7 +50,7 @@
             <div class="tab-titulos">
               <div class="tab-links ativa-link" onclick="opentab('skills')">Skills</div>
               <div class="tab-links" onclick="opentab('experiencia')">Experiência</div>
-              <div class="tab-links" onclick="opentab('formacao')">Formação acadêmica</div>
+              <div class="tab-links" onclick="opentab('formacao')">Formação</div>
               <div class="tab-links" onclick="opentab('tecnologias')">Tecnologias</div>
             </div>
             <div class="tab-conteudo ativa-tab" id="skills">
@@ -158,6 +160,40 @@
       </div>
     </div>
 
+<!-- ===================Contato=================== -->
+    <div id="contato">
+      <div class="container">
+        <div class="Linha">
+          <div class="contato-esquerda">
+            <h1 class="Subtitulo">Entre em contato</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> victma2001@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> (11)97711-0123</p>
+            <div class="sociais">
+              <a href="https://www.linkedin.com/in/victorlopesm/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/vic-3PO"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/vic_o_denes/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/Victor Lopes - Currículo.pdf" download class="btn btn2">Download do currículo</a>
+          </div>
+          <div class="contato-direita">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="your-Name" placeholder="Seu nome" required>
+              <input type="email" name="your-Email" placeholder="Seu Email" required>
+              <textarea name="your-Message" rows="6" placeholder="Sua menssagem"></textarea>
+              <button type="submit"  value="Submit" id="submit" class="btn btn2">Enviar</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Victor.</p>
+      </div>
+    </div>
+
+
   <script src="script.js"></script>
+  <script src="script-menu.js"></script>
+  <script src="script-contato.js"></script>
   </body>
 </html>
