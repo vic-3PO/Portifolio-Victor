@@ -151,7 +151,7 @@ export const experiences = [
     },
     {
         title: "Desenvolvedor Front-End",
-        job: "Callink (antiga Fidelity)",
+        job: "Callink",
         date: "mar/2025 - presente",
         contents: [
             "Responsável por implantar e estruturar aplicações Next.js em ambientes corporativos complexos.",
