@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./sections/navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/about";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
 import Footer from "./sections/Footer";
 import Testimonial from "./sections/Testimonial";
+import Navbar from "./sections/Navbar";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <Projects />
       <Experiences />
       <Testimonial />
-      <section className=""/>
+      {/* <section className=""/> */}
       {/* <Contact /> */}
       <Footer />
     </div>
